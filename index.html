@@ -1,59 +1,131 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Mihir Upadhyay</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir Upadhyay | Data Scientist & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="cloud.png" alt="cloud image">
-    <h1>I'm Mihir!</h1>
-    <h2 class="first-h2">a Developer.</h2>
-    <img class="bottom-cloud" src="cloud.png" alt="cloud image">
-    <img src="mountain.png" alt="cloud image">
-  </div>
-  <div class="middle-container">
-    <div class="profile">
-      <img src="http://img4.wikia.nocookie.net/__cb20120815160236/simpsons/images/0/01/200px-Langdon_Alger.png" alt="mihir's image">
-      <h2>Hello.</h2>
-      <p class="intro">I am a web developer. Former intern at <strong>Standard Chartered GBS</strong>. I love to sing and play football.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">Mihir Upadhyay</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm Mihir Upadhyay</h1>
+                <p class="tagline">Data Science @ NYU</p>
+                <p class="tagline">New York City, NY, USA</p>
+                <a href="Mihir Resume.pdf" class="btn-primary" target="_blank">Download CV</a>
+                
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mihir-upadhyay-434364171" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/mihirupadhyay" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:mu2253@nyu.edu"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-picture">
+                    <img src="Mihir_Linkedin.PNG.jpg" alt="Mihir Upadhyay">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I am a Data Science professional currently studying at the Center for Data Science, New York University. I am expected to graduate in May 2026, specializing in data science with a keen interest in Natural Language Processing (NLP), Computer Vision (CV), and Machine-Human Interactions.</p>
+
+                    <p>Throughout my professional journey, I have had the privilege of working in diverse domains, ranging from financial giants like Standard Chartered to cutting-edge generative AI-based startups such as Flixstock. In 2020, I interned at Standard Chartered in a data science role and became proficient in tools like Tableau and Power BI. I was also recognized with the “Best Newcomer Project” award in my first year for delivering impactful solutions. With over 2 years of professional experience across multiple roles—including web development, full-stack development, CI/CD, and product management—I have successfully contributed to creating scalable and optimized systems, real-time data pipelines, ML models, and APIs.</p>
+
+                    <p>My educational journey began at the prestigious Indian Institute of Technology (IIT) BHU, Varanasi, where I earned my Bachelor of Technology degree after securing an All India Rank (AIR) of 5407 among 1.5 million students in the national entrance examination. Currently, I am pursuing my Master’s at New York University, majoring in Data Science. I am taking courses in Linear Algebra and Optimization, Probability and Statistics, and Big Data, with research interests in CV, NLP, and Machine-Human Interactions.</p>
+
+                    <p>I look forward to giving back to the community in any way possible. During my undergraduate years, I conducted coding workshops as a member of the Club of Programmers and organized music workshops, inviting external guests as the secretary of the Music Club at IIT BHU. In my professional roles, I have also led workshops explaining engineering and data science concepts to business and marketing teams. I am always eager to mentor and learn from others.</p>
+
+                    <p>Besides my enthusiasm for data science, I enjoy creating and listening to music and playing badminton. I am always excited to meet new people and exchange ideas. Feel free to connect with me on LinkedIn, and let’s arrange a coffee chat!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Languages</h3>
+                    <p>Python, JavaScript, C++, SQL, Bash</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-robot"></i>
+                    <h3>Machine Learning</h3>
+                    <p>PyTorch, TensorFlow, Keras, NLTK, OpenCV</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-palette"></i>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, ReactJS, jsPsych </p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-palette"></i>
+                    <h3>Backend Development</h3>
+                    <p>Java, Jenkins, REST APIs, Kubernetes, WebSockets </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card"> <!-- Add class here -->
+                <h3>Face and Emotion Detector</h3>
+                <p>Implemented CNN model for emotion detection using "fer2013" dataset and tuning.</p>
+                <a href="https://github.com/mihirupadhyay/Face-and-Emotion-Detector" target="_blank" class="btn-secondary">View on GitHub</a>
+            </div>
+            <div class="project-card"> <!-- Add class here -->
+                <h3>Programming Tag Generator</h3>
+                <p>Analyzed 400,000+ Quora questions using NLP for multilabel programming tags.</p>
+                <a href="https://github.com/mihirupadhyay/Programming-Tag-Generator" target="_blank" class="btn-secondary">View on GitHub</a>
+            </div>
+            <div class="project-card"> <!-- Add class here -->
+                <h3>Dog Vision Classifier</h3>
+                <p>Developed MobileNet V2 model to classify 120 dog breeds using transfer learning.</p>
+                <a href="https://github.com/mihirupadhyay/Dog-Vision-Classifier" target="_blank" class="btn-secondary">View on GitHub</a>
+            </div>
+        </div>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="computer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjYqsamfWzHAt2nVot4Q4SldAA_hKGX_9k6w&usqp=CAU" alt="computer image">
-        <h3>Machine Learning and Web development</h3>
-        <p class="my-experience">I started competitive coding in 2018. I'm currently expanding my knowledge base by gaining more experience in web development.</p>
-      </div>
-      <div class="skill-row">
-        <img class="singing" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRX_kDUXr5Auj6lVHAQaf6sROBdW1SKIx1eg&usqp=CAU" alt="">
-        <h3>Singing</h3>
-        <p>But my favourite skill is singing. I was the main vocalist of my college band. I love Western music to be more specific. </p>
-      </div>
-    </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Love Singing as much as i do?</h3>
-      <p>Let's code and sing together.</p>
-      <a class="BUTTON_YKU" href="mailto:mihirupadhyay1999@gmail.com">CONTACT ME</a>
-    </div>
-  </div>
+</section>
 
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/mihir-upadhyay-434364171/?originalSubdomain=in">LinkedIn</a>
-    <p class="copyright">© 2021 Mihir Upadhyay.</p>
-  </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Mihir Upadhyay</p>
+        </div>
+    </footer>
 </body>
 
 </html>
