@@ -17,14 +17,15 @@
             <div class="logo">Mihir Upadhyay</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">Page 1</a></li>
+                <li><a href="#skills">Page 2</a></li>
+                <li><a href="#projects">Page 3</a></li>
+                <li><a href="#publications">Page 4</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Homepage -->
     <section id="home" class="hero-section">
         <div class="container">
             <div class="hero-content">
@@ -34,7 +35,7 @@
                 <a href="Resume_Mihir'25.pdf" class="btn-primary" target="_blank">Download CV</a>
                 
                 <!-- Social Media Links -->
-                <div class="social-links">
+                <div class="social-links" style="margin-top: 20px;"></div>
                     <a href="https://www.linkedin.com/in/mihir-upadhyay-434364171" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/mihirupadhyay" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:mu2253@nyu.edu"><i class="fas fa-envelope"></i></a>
@@ -43,7 +44,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Page 1: About Section -->
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-content">
@@ -58,64 +59,93 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Page 2: Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill">
                     <i class="fas fa-code"></i>
-                    <h3>Languages</h3>
-                    <p>Python, JavaScript, C++, SQL, Bash</p>
+                    <h3>Programming</h3>
+                    <p>Python, SQL, Bash, JavaScript, C++,</p>
                 </div>
                 <div class="skill">
                     <i class="fas fa-robot"></i>
-                    <h3>Machine Learning</h3>
-                    <p>PyTorch, TensorFlow, Keras, NLTK, OpenCV</p>
+                    <h3>Frameworks</h3>
+                    <p>Pandas, Numpy, NLTK, PyTorch, TensorFlow, Keras, Scikit-Learn, OpenCV</p>
                 </div>
                 <div class="skill">
                     <i class="fas fa-palette"></i>
-                    <h3>Frontend Development</h3>
-                    <p>HTML, CSS, JavaScript, ReactJS, jsPsych </p>
+                    <h3>Databases</h3>
+                    <p>MS SQL Server, MySQL, PostgreSQL, Oracle RDBMS</p>
                 </div>
                 <div class="skill">
                     <i class="fas fa-palette"></i>
-                    <h3>Backend Development</h3>
-                    <p>Java, Jenkins, REST APIs, Kubernetes, WebSockets </p>
+                    <h3>Tools</h3>
+                    <p>AWS (S3, SageMaker Airflow), GCP, Kubernetes, Looker, Tableau, PowerBI </p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card"> <!-- Add class here -->
-                <h3>Face and Emotion Detector</h3>
-                <p>Implemented CNN model for emotion detection using "fer2013" dataset and tuning.</p>
-                <a href="https://github.com/mihirupadhyay/Face-and-Emotion-Detector" target="_blank" class="btn-secondary">View on GitHub</a>
-            </div>
-            <div class="project-card"> <!-- Add class here -->
-                <h3>Programming Tag Generator</h3>
-                <p>Analyzed 400,000+ Quora questions using NLP for multilabel programming tags.</p>
-                <a href="https://github.com/mihirupadhyay/Programming-Tag-Generator" target="_blank" class="btn-secondary">View on GitHub</a>
-            </div>
-            <div class="project-card"> <!-- Add class here -->
-                <h3>Dog Vision Classifier</h3>
-                <p>Developed MobileNet V2 model to classify 120 dog breeds using transfer learning.</p>
-                <a href="https://github.com/mihirupadhyay/Dog-Vision-Classifier" target="_blank" class="btn-secondary">View on GitHub</a>
+    <!-- Page 3: Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Professor Ratings Analysis with Statistical Insights and Predictive Modeling</h3>
+                    <p>
+                        • Identified gender-based differences in ratings (p-value < 0.005) and built predictive models (R-squared: 0.85, 85% accuracy).<br>
+                        • Analyzed subject impact using Kruskal-Wallis tests, identifying top 3 subjects and visualizing results.
+                    </p>
+                    <a href="https://github.com/mihirupadhyay/DS-GA-1001_IDS_Professor-Ratings-Analysis" target="_blank" class="btn-secondary">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Enhanced Human-Background Image Synthesis using BLIP2 and DensePose</h3>
+                    <p>
+                        • Built an ML pipeline for anatomical extraction and scene understanding (95% accuracy), deployed as a Flask API with React front-end (response time < 20s).<br>
+                        • Improved realism with shadow correction (40% lighting consistency) and optimized AWS S3 storage for 100+ concurrent requests (latency < 200ms).
+                    </p>
+                    <a href="https://github.com/mihirupadhyay/Flixstock-Project" target="_blank" class="btn-secondary">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>LLM-Optimized Relationship Manager Portal with Adaptive Query Resolution</h3>
+                    <p>
+                        • Built an LLM-powered chatbot (GPT-3) with RAG and intent classification, reducing query resolution time by 40% and improving contextual relevance by 35%.<br>
+                        • Developed a secure RM portal (Spring, React.js, PostgreSQL) with WebSocket messaging, reducing manual intervention by 50% and increasing engagement by 30%.
+                    </p>
+                    <a href="https://github.com/mihirupadhyay/SCB-RM-Portal" target="_blank" class="btn-secondary">View on GitHub</a>
+                </div>
+                <div class="project-card"> <!-- Add class here -->
+                    <h3>Programming Tag Generator</h3>
+                    <p>Analyzed 400,000+ Quora questions using NLP for multilabel programming tags.</p>
+                    <a href="https://github.com/mihirupadhyay/Programming-Tag-Generator" target="_blank" class="btn-secondary">View on GitHub</a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Page 4: Publications Section -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="publications-list">
+                <div class="publication">
+                    <h3>When Should We Orchestrate Multiple Agents?</h3>
+                    <p><strong>Submitted to ICML 2025 (under review)</strong></p>
+                    <p><strong>Authors:</strong> Umang Bhatt, Sanyam Kapoor, Katherine M. Collins, Ilia Sucholutsky, Mihir Upadhyay, Francesco Quinzan, Adrian Weller, Andrew Gordon Wilson, Muhammad Bilal Zafar.</p>
+                    <p><strong>Abstract:</strong> Strategies for orchestrating interactions between multiple agents often overestimate performance and underestimate orchestration costs. We propose a framework for orchestration under realistic conditions, such as inference costs and availability constraints. Our findings show that orchestration is effective only when there are performance or cost differentials between agents. Empirical results demonstrate its utility in agent selection in simulated environments, learning strategy selection in Rogers' Paradox, and task outsourcing in human-subject question-answer experiments.</p>
+                    <a href="https://arxiv.org/abs/XXXX.XXXX" target="_blank" class="btn-secondary">Read Paper</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2024 Mihir Upadhyay</p>
+            <p>© 2025 Mihir Upadhyay</p>
         </div>
     </footer>
 </body>
