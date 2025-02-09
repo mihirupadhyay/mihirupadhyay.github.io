@@ -18,7 +18,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #333333;
+    background-color: #333;
     color: white;
     padding: 10px 0;
 }
@@ -63,37 +63,42 @@ nav {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 1200px; /* Increased max-width for better text rendering */
     margin: 0 auto;
+    padding: 0 20px; /* Add padding for better spacing */
 }
 
 .about-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px; /* Space between image and text */
     margin-bottom: 30px;
 }
 
 .profile-picture img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .about-text {
-    max-width: 1200px; /* Increase the width from 1000px to 1200px */
-    width: 90%;        /* Ensure it scales with screen size */
-    margin: 0 auto;    /* Center the text block */
+    flex: 1; /* Allow text to take up remaining space */
     text-align: left;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    margin: 0 0 1rem 0; /* Add some spacing between paragraphs */
-    text-align: justify;
+    margin: 0 0 20px 0; /* Add margin between paragraphs */
+    text-align: justify; /* Ensure text lines start and end consistently */
 }
 
 .btn-primary {
@@ -125,129 +130,6 @@ nav {
 
 .social-links a:hover {
     color: #007bff;
-}
-
-/* Skills Section */
-.skills-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.skill {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.skill i {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-.skill h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.skill p {
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Projects Section */
-.projects-section {
-    padding: 60px 0;
-    background-color: #f4f4f4;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.project-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: justify; /* Ensure text lines start and end consistently */
-}
-
-.btn-secondary {
-    display: inline-block;
-    padding: 8px 16px; /* Reduced padding for smaller buttons */
-    background-color: #333; /* Matches the navigation bar color */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    text-align: center; /* Center text inside buttons */
-    width: auto; /* Allow buttons to shrink to fit content */
-}
-
-.btn-secondary:hover {
-    background-color: #555; /* Darker shade for hover effect */
-}
-
-/* Publications Section */
-.publications-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.publications-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.publication {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.publication h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.publication p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #555;
-    text-align: justify; /* Ensure text lines start and end consistently */
 }
 
 /* Footer */
