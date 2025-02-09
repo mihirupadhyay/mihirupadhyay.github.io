@@ -18,7 +18,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: #333333;
     color: white;
     padding: 10px 0;
 }
@@ -83,8 +83,9 @@ nav {
 }
 
 .about-text {
-    max-width: 600px;
+    max-width: 1000px;
     text-align: left;
+
 }
 
 .about-text p {
