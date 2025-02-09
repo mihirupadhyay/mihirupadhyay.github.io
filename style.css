@@ -91,12 +91,13 @@ nav {
     font-size: 1.1rem;
     line-height: 1.8;
     margin: 0;
+    text-align: justify; /* Ensure text lines start and end consistently */
 }
 
 .btn-primary {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #333; /* Matches the navigation bar color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -104,7 +105,7 @@ nav {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #555; /* Darker shade for hover effect */
 }
 
 .social-links {
@@ -193,12 +194,13 @@ nav {
     line-height: 1.6;
     color: #555;
     margin-bottom: 20px;
+    text-align: justify; /* Ensure text lines start and end consistently */
 }
 
 .btn-secondary {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #333; /* Matches the navigation bar color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -206,7 +208,7 @@ nav {
 }
 
 .btn-secondary:hover {
-    background-color: #0056b3;
+    background-color: #555; /* Darker shade for hover effect */
 }
 
 /* Publications Section */
@@ -239,6 +241,7 @@ nav {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
+    text-align: justify; /* Ensure text lines start and end consistently */
 }
 
 /* Footer */
