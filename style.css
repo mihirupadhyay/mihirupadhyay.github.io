@@ -192,8 +192,8 @@ html {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax for card width */
+    gap: 20px; /* Space between cards */
 }
 
 .project-card {
@@ -203,8 +203,9 @@ html {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* Align content to top and bottom */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for box effect */
+    height: 100%; /* Ensure all cards have the same height */
 }
 
 .project-card h3 {
@@ -219,6 +220,7 @@ html {
     color: #555;
     margin-bottom: 20px;
     text-align: justify; /* Ensure text lines start and end consistently */
+    flex-grow: 1; /* Allow description to grow and fill space */
 }
 
 .btn-secondary {
@@ -236,7 +238,6 @@ html {
 .btn-secondary:hover {
     background-color: #555; /* Darker shade for hover effect */
 }
-
 /* Publications Section */
 .publications-section {
     padding: 60px 0;
