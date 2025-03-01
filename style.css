@@ -6,8 +6,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: #f4f4f4; /* Consistent background color for the body */
+    min-height: 100vh; /* they Ensure the body takes at least the full height of the viewport */
 }
 
 .container {
@@ -52,27 +51,27 @@ nav {
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
-    margin-right: auto;
+    margin-right: auto; /* Push logo to the left */
 }
 
 /* Hero Section (Homepage) */
 .hero-section {
-    flex: 1;
+    flex: 1; /* Allow the hero section to grow and push the footer to the bottom */
     padding: 60px 0;
     background-color: #f4f4f4;
     text-align: center;
 }
 
 .hero-content {
-    max-width: 1200px;
+    max-width: 1200px; /* Increased max-width for better text rendering */
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px; /* Add padding for better spacing */
 }
 
 .about-content {
     display: flex;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: flex-start; /* Align items to the top */
+    gap: 40px; /* Space between image and text */
     margin-bottom: 30px;
 }
 
@@ -81,11 +80,11 @@ nav {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    flex-shrink: 0;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .about-text {
-    flex: 1;
+    flex: 1; /* Allow text to take up remaining space */
     text-align: left;
 }
 
@@ -98,24 +97,24 @@ nav {
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    margin: 0 0 20px 0;
-    text-align: justify;
+    margin: 0 0 20px 0; /* Add margin between paragraphs */
+    text-align: justify; /* Ensure text lines start and end consistently */
 }
 
 .btn-primary {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
+    padding: 8px 16px; /* Reduced padding for smaller buttons */
+    background-color: #333; /* Matches the navigation bar color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    text-align: center;
-    width: auto;
+    text-align: center; /* Center text inside buttons */
+    width: auto; /* Allow buttons to shrink to fit content */
 }
 
 .btn-primary:hover {
-    background-color: #555;
+    background-color: #555; /* Darker shade for hover effect */
 }
 
 .social-links {
@@ -139,7 +138,7 @@ footer {
     padding: 20px 0;
     background-color: #333;
     color: white;
-    margin-top: auto;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 /* Smooth Scrolling */
@@ -165,7 +164,7 @@ html {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for box effect */
 }
 
 .skill i {
@@ -193,8 +192,9 @@ html {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax for card width */
+    gap: 20px; /* Space between cards */
+    align-items: stretch; /* Ensure all cards stretch to the same height */
 }
 
 .project-card {
@@ -204,9 +204,9 @@ html {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 100%;
+    justify-content: space-between; /* Align content to top and bottom */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for box effect */
+    height: 100%; /* Ensure all cards have the same height */
 }
 
 .project-card h3 {
@@ -220,26 +220,25 @@ html {
     line-height: 1.6;
     color: #555;
     margin-bottom: 20px;
-    text-align: justify;
-    flex-grow: 1;
+    text-align: justify; /* Ensure text lines start and end consistently */
+    flex-grow: 1; /* Allow description to grow and fill space */
 }
 
 .btn-secondary {
     display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
+    padding: 8px 16px; /* Reduced padding for smaller buttons */
+    background-color: #333; /* Matches the navigation bar color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    text-align: center;
-    width: auto;
+    text-align: center; /* Center text inside buttons */
+    width: auto; /* Allow buttons to shrink to fit content */
 }
 
 .btn-secondary:hover {
-    background-color: #555;
+    background-color: #555; /* Darker shade for hover effect */
 }
-
 /* Publications Section */
 .publications-section {
     padding: 60px 0;
@@ -257,7 +256,7 @@ html {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for box effect */
 }
 
 .publication h3 {
@@ -270,112 +269,5 @@ html {
     font-size: 1rem;
     line-height: 1.6;
     color: #555;
-    text-align: justify;
-}
-
-/* Experience and Education Sections */
-.experience-section, .education-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #e0e0e0;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-    box-sizing: border-box;
-}
-
-.timeline-item.left {
-    left: 0;
-}
-
-.timeline-item.right {
-    left: 50%;
-}
-
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -12px;
-    background-color: #fff;
-    border: 4px solid #007bff;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item.right::after {
-    left: -12px;
-}
-
-.timeline-content {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.timeline-content h3 {
-    margin-top: 0;
-    color: #007bff;
-}
-
-.timeline-content p {
-    margin: 10px 0;
-}
-
-.timeline-content ul {
-    padding-left: 20px;
-}
-
-.timeline-content ul li {
-    margin-bottom: 10px;
-}
-
-@media screen and (max-width: 768px) {
-    .timeline::after {
-        left: 31px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    .timeline-item.left, .timeline-item.right {
-        left: 0;
-    }
-
-    .timeline-item::after {
-        left: 18px;
-    }
-
-    .timeline-item.right::after {
-        left: 18px;
-    }
+    text-align: justify; /* Ensure text lines start and end consistently over*/
 }
