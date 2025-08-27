@@ -1,0 +1,162 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\geometry{top=0.5in, bottom=0.5in, left=0.5in, right=0.5in}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black,
+    linkbordercolor={1 1 1},
+    pdfborder={0 0 0},
+    hidelinks=true,
+    allcolors=black,
+    bookmarks=false,
+    bookmarksopen=false,
+    bookmarksnumbered=false,
+    pdfstartview=Fit,
+    pdfpagemode=UseNone
+}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+% Professional color scheme
+\definecolor{darksilver}{RGB}{100,100,100}
+\definecolor{navy}{RGB}{0, 0, 128}
+\definecolor{teal}{RGB}{0, 128, 128}
+\definecolor{sectioncolor}{RGB}{50,50,50}
+\definecolor{linkcolor}{RGB}{0,100,200}
+\definecolor{rulecolor}{RGB}{180,180,180}
+\definecolor{textcolor}{RGB}{80,80,80}
+\definecolor{boldcolor}{RGB}{50,50,50} % Darker blackish-silver for bold text
+\definecolor{lightboldcolor}{RGB}{70,70,70} % Lighter bold color for positions
+
+% Professional section formatting - sans serif headings with line after title
+\titleformat{\section}{\Large\bfseries\sffamily\color{boldcolor}}{}{0em}{}[\color{rulecolor}\titlerule]
+\titleformat{\subsection}{\large\bfseries\sffamily\color{boldcolor}}{}{0em}{}
+\titlespacing{\section}{0pt}{12pt plus 2pt minus 2pt}{8pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{6pt plus 1pt minus 1pt}{4pt plus 1pt minus 1pt}
+
+% Professional list formatting - compact spacing
+\setlist{nosep}
+
+% Manual spacing control - no automatic paragraph spacing
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% Set default text color to silverish
+\color{textcolor}
+
+% Compact itemize spacing and indentation
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt, partopsep=0pt}
+
+% Begin document
+\begin{document}
+
+\begin{center}
+    {\color{boldcolor}\textbf{\LARGE Mihir Upadhyay}} \\
+    \vspace{0.3cm}  
+    {\small \faEnvelope \, \href{mailto:mu2253@nyu.edu}{\color{boldcolor}mu2253@nyu.edu} \quad $\vert$ \quad \faLinkedin \, \href{https://www.linkedin.com/in/mihir-upadhyay-434364171/}{\color{boldcolor}LinkedIn} \quad $\vert$ \quad \faPhone \, \color{boldcolor}+1 (551)-362-5762 \quad $\vert$ \quad \faGraduationCap \, \href{https://scholar.google.com/citations?user=2HXFgKMAAAAJ&hl=en}{\color{boldcolor}Google Scholar} \quad $\vert$ \quad \faGithub \, \href{https://github.com/mihirupadhyay}{\color{boldcolor}GitHub}} \\
+    \vspace{0.2cm}
+\end{center}
+
+\section*{EDUCATION}
+{\color{boldcolor}\textbf{New York University}} \hfill New York, US  \\  
+\textit{M.S. in Data Science}  \hfill \textit{\small Sep 2024 - Present}\\ 
+{\color{boldcolor}\textbf{GPA: 3.9/4.0}} \\
+\vspace{0.08cm}
+
+{\color{boldcolor}\textbf{Indian Institute of Technology BHU}} \hfill Varanasi, India\\
+\textit{B.Tech in Chemical Engineering} \hfill \textit{\small Jul 2017 - May 2021}\\
+{\color{boldcolor}\textbf{GPA: 8.68/10.0}} \\
+
+\section*{RESEARCH \& INDUSTRY EXPERIENCE}
+
+{\color{boldcolor}\textbf{University of Cambridge}} 
+\hfill New York, US\\
+{\color{lightboldcolor}\textbf{\textit{Visiting Student Researcher}}} \hfill \textit{\small Sep 2025 – Present}
+\begin{itemize}
+    \item Developing algorithms to analyze and improve human–AI collaboration in multi-agent systems.  
+\end{itemize}
+\vspace{0.05cm}
+
+{\color{boldcolor}\textbf{Research Center Trustworthy Data Science and Security, Ruhr University}} \hfill Bochum, Germany\\
+{\color{lightboldcolor}\textbf{\textit{Research Intern}}} \hfill \textit{\small May 2025 - Aug 2025}
+\begin{itemize}
+    \item Systematically analyzed methods for evaluating the diversity of information presented by generative AI content retrieval agents vs. traditional web search (Under review @ WSDM 2026).
+    \item Curated 6 real-world query datasets and collected search results via various search APIs, analyzing source coverage and temporal patterns.
+    \item Designed a human evaluation study using Prolific to measure user preferences across Google AI Overviews, Gemini, and GPT-4 pipelines.
+\end{itemize}
+\vspace{0.05cm}
+
+{\color{boldcolor}\textbf{Flixstock}} \hfill Gurugram, India\\
+{\color{lightboldcolor}\textbf{\textit{Product Manager}}} \hfill \textit{\small Oct 2022 - Sep 2023}
+\begin{itemize}
+    \item Designed and deployed e-commerce image generation pipelines using diffusion models, GANs, and image captioning, enabling AI models to replace human models in 20\% of the catalog.  
+    \item Directed a team of 8+ engineers to develop and launch three full-stack platforms with REST API endpoints, deployed on AWS.  
+\end{itemize}
+\vspace{0.05cm}
+
+{\color{boldcolor}\textbf{Standard Chartered Bank}} \hfill Bengaluru, India \\
+{\color{lightboldcolor}\textbf{\textit{AI/ML Analyst}}} \hfill \textit{\small Jul 2021 - Sep 2022}
+\begin{itemize}
+    \item Evaluated and deployed bias, drift, and performance monitoring tools (Truera, Datarobot) for 10+ forecasting models, benchmarking against traditional ML methods.   
+    \item Led a 5+ member team to deploy tools via OpenShift and Kubernetes (Docker containers), leveraging Kubernetes operators for lifecycle management and Jenkins for CI/CD.  
+\end{itemize}
+\vspace{0.05cm}
+
+{\color{lightboldcolor}\textbf{\textit{Data Science Intern}}} \hfill \textit{\small May 2020 - Jul 2020}
+\begin{itemize}
+    \item Built and tuned ensemble classifiers on a European credit card transaction dataset, improving fraud detection and reducing false positives by 5\%.
+    \item Developed Tableau dashboards for KPIs like transaction volume and response time, reducing reporting time by 4 hours/week.
+\end{itemize}
+\vspace{0.05cm}
+
+\section*{TEACHING}
+
+{\color{boldcolor}\textbf{Teaching Assistant}} \hfill \textit{\small Sep 2025 – Present} \\
+\textit{Courant Institute of Mathematical Sciences, NYU} \hfill New York, US \\
+\vspace{-0.4cm}
+\begin{itemize}
+    \item Course: Algebra, Trigonometry, and Functions
+\end{itemize}
+\vspace{0.05cm}
+
+{\color{boldcolor}\textbf{Teaching Assistant}} \hfill \textit{\small Jan 2025 – May 2025} \\
+\textit{Center for Data Science, NYU} \hfill New York, US \\
+\vspace{-0.4cm}
+\begin{itemize}
+    \item Course: Responsible Data Science
+\end{itemize}
+
+\section*{PUBLICATIONS}
+
+\noindent
+{\color{boldcolor}\textbf{When Should We Orchestrate Multiple Agents?}} 
+\href{https://arxiv.org/abs/2503.13577}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{Under review @ NeurIPS 2025} \\
+\textit{Umang Bhatt, Sanyam Kapoor, \textbf{Mihir Upadhyay}, Katherine M. Collins, Ilia Sucholutsky, Francesco Quinzan, Adrian Weller, Andrew Gordon Wilson, Muhammad Bilal Zafar} \\
+\vspace{0.08cm}
+
+{\color{boldcolor}\textbf{Characterizing Search in The Age of Generative AI}} 
+\href{https://arxiv.org/abs/2503.13577}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{Under review @ WSDM 2026} \\
+\textit{Elisabeth Kirsten, Jost Grosse Perdekamp, \textbf{Mihir Upadhyay}, Krishna P. Gummadi and Muhammad Bilal Zafar} \\
+\vspace{0.08cm}
+
+\section*{ONGOING PROJECTS}
+\begin{itemize}
+    \item Building a platform to evaluate generative AI agents on a custom poetry dataset derived from high school curricula across diverse regions and languages.
+    \item Developing a framework to assess diversity in collaborative and competitive human–AI agent settings using real-world queries across domains.
+\end{itemize}
+
+\section*{AWARDS}
+\begin{itemize}
+    \item {\color{boldcolor}\textbf{SVSAES Scholarship}} for MS funding (\$75K).
+    \item {\color{boldcolor}\textbf{IIT BHU Merit Scholarship}} for the academic years 2017-2021.
+\end{itemize}
+
+\section*{SKILLS \& INTERESTS}
+{\color{boldcolor}\textbf{Programming:}} Python (Numpy, pandas, scikit-learn, PyTorch, TensorFlow, Hugging Face, LangChain, Transformers), SQL, Shell/Bash, HTML, JavaScript, C/C++, Prolific, MongoDB, Docker, AWS \\
+{\color{boldcolor}\textbf{Coursework:}} Deep Learning, Machine Learning, Big Data, Linear Algebra & Optimization, Probability & Statistics, Responsible Data Science\\
+
+\end{document}

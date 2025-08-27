@@ -3,246 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mihir Upadhyay - Home</title>
+    <title>Mihir Upadhyay - Data Scientist</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        /* Timeline Styling */
-        .timeline {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: #e0e0e0;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-            box-sizing: border-box; /* Ensure padding is included in width */
-        }
-
-        .timeline-item.left {
-            left: 0;
-        }
-
-        .timeline-item.right {
-            left: 50%;
-        }
-
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -12px;
-            background-color: #fff;
-            border: 4px solid #007bff;
-            top: 15px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .timeline-item.right::after {
-            left: -12px;
-        }
-
-        .timeline-content {
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-            width: 100%; /* Ensure content stays within the bounds */
-            box-sizing: border-box; /* Include padding in width */
-        }
-
-        .timeline-content h3 {
-            margin-top: 0;
-            color: #007bff;
-        }
-
-        .timeline-content p {
-            margin: 10px 0;
-        }
-
-        .timeline-content ul {
-            padding-left: 20px;
-        }
-
-        .timeline-content ul li {
-            margin-bottom: 10px;
-        }
-
-        @media screen and (max-width: 768px) {
-            .timeline::after {
-                left: 31px;
-            }
-
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-
-            .timeline-item.left, .timeline-item.right {
-                left: 0;
-            }
-
-            .timeline-item::after {
-                left: 18px;
-            }
-
-            .timeline-item.right::after {
-                left: 18px;
-            }
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="container">
-            <div class="logo">Mihir Upadhyay</div>
+            <div class="logo"><a href="#home">Mihir Upadhyay</a></div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="index.html#experience">Experience</a></li>
-                <li><a href="index.html#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="CV_Mihir.pdf" target="_blank">CV</a></li>
+                <li><button id="theme-toggle" class="theme-toggle"><i class="fas fa-moon"></i></button></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Homepage Content (About Section) -->
-    <section id="home" class="hero-section">
+    <!-- Home Section -->
+    <section id="home" class="section">
         <div class="container">
             <div class="hero-content">
                 <div class="about-content">
                     <div class="profile-picture">
                         <img src="avatar.PNG.jpg" alt="Mihir Upadhyay">
                         <h2>Mihir Upadhyay</h2>
-                        <p>MS Student</p>
                         <p>New York University</p>
-                        <!-- Social Media Links -->
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/mihir-upadhyay-434364171" target="_blank"><i class="fab fa-linkedin"></i></a>
                             <a href="https://github.com/mihirupadhyay" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://scholar.google.com/citations?user=2HXFgKMAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
                             <a href="mailto:mu2253@nyu.edu"><i class="fas fa-envelope"></i></a>
                         </div>
                     </div>
                     <div class="about-text">
-                        <h1>Welcome</h1>
-                        <p>Currently, I'm pursuing my master's in Data Science at NYU's Center for Data Science, supervised by Prof. Umang Bhatt, researching trustworthy ML. My current interests include orchestrating multiple agents and developing methods to detect skill atrophy in sequential decision-making tasks.</p>
-                        <p>I previously worked as a Technical Product Manager at Flixstock, an e-commerce startup, leading generative AI solutions to revamp image catalogs and enhance online image editing tools using AI. Prior to that, I led AI research at Standard Chartered Bank under the direction of Amarendra Rout, focusing on improving predictive modeling with time-series data from credit card transactions and evaluating the performance of third-party bias and drift detection tools. I also collaborated on developing an LLM-Optimized Relationship Manager Portal featuring adaptive query resolution, fine-tuned retrieval-augmented generation (RAG), and intent classification.</p>
-                        <p>I'm a graduate of IIT BHU with a BTech, where I completed coursework in differential equations and linear algebra, and independently worked on computer vision-based image recognition projects.</p>
-                        <p>Outside of work, I enjoy writing and creating music. I served as the secretary of the Western Music Club at IIT BHU and performed in over 10 events across the country during my four years there. I also love playing racket sports—whether it's badminton, tennis, or, more recently, pickleball—and I'm always up for a game.</p>
+                        <p>I'm pursuing my Master's in Data Science at the <a href="https://cds.nyu.edu/" target="_blank">Center for Data Science</a> at <a href="https://www.nyu.edu/" target="_blank">New York University</a>. Currently, I'm working under the supervision of <a href="https://umangsbhatt.github.io/" target="_blank">Prof. Umang Bhatt</a>. My research focuses on developing algorithms that enhance <a href="https://arxiv.org/abs/2503.13577" target="_blank">human-AI collaboration</a>, particularly in education and security contexts.</p>
+                        <p>Recently, I interned with <a href="https://informatik.rub.de/zafar/" target="_blank">Prof. Muhammad Bilal Zafar</a> at <a href="https://rc-trust.ai/" target="_blank">Research Center Trustworthy Data Science and Security</a> Ruhr University Bochum. There, I systematically evaluated the diversity of information presented by GenAI content retrieval agents, comparing the information diversity in deployed GenAI tools against traditional search systems.</p>
+                        <p>Prior to my academic pursuits, I ventured into industry as a Product Manager at <a href="https://www.flixstock.com/" target="_blank">Flixstock</a>. Working under <a href="https://www.crunchbase.com/person/harindar-keer" target="_blank">Harinder Keer</a> and <a href="https://in.linkedin.com/in/ashish-kumar-21a20390" target="_blank">Ashish Kumar</a>, I researched AI-based image generation using diffusion models and GANs.</p>
+                        <p>Before Flixstock, I was part of the AI tools team at Standard Chartered, working with <a href="https://sg.linkedin.com/in/sabarinath-thekkath-b8a8a44" target="_blank">Thekkath Sabarinath</a> and <a href="https://in.linkedin.com/in/amarendra-rout-564ab2123" target="_blank">Amarendra Rout</a>. My research there centered on AI tools implementation (like Truera and DataRobot) in the banking sector.</p>
+                        <p>I completed my Bachelor's degree at <a href="https://iitbhu.ac.in/" target="_blank">IIT BHU</a>, where I developed a passion for data science and machine learning through participating in Kaggle competitions, hackathons, and competitive programming challenges.</p>
+                        <p>Beyond my professional life, you'll find me immersed in music – whether jamming at home or discovering new playlists in cozy cafés. I enjoy singing and occasionally channel my inspiration into writing.</p>
                     </div>
                 </div>
-                <a href="Resume_Mihir'25.pdf" class="btn-primary" target="_blank">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="publications-content">
+                <div class="publication">
+                    <h3>When Should We Orchestrate Multiple Agents?</h3>
+                    <p><strong>Under review @ NeurIPS 2025</strong></p>
+                    <p><strong>Authors:</strong> Umang Bhatt, Sanyam Kapoor, <strong>Mihir Upadhyay</strong>, Katherine M. Collins, Ilia Sucholutsky, Francesco Quinzan, Adrian Weller, Andrew Gordon Wilson, Muhammad Bilal Zafar.</p>
+                    <a href="https://arxiv.org/abs/2503.13577" target="_blank">View Paper</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-content">
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Advanced programming for ML/AI development</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                    <p>Database management and data querying</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <p>Web development and interactive applications</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-link"></i>
+                    <h3>LangChain</h3>
+                    <p>LLM orchestration and agent development</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-rocket"></i>
+                    <h3>FastAPI</h3>
+                    <p>High-performance API development</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Apache Spark</h3>
+                    <p>Big data processing and distributed computing</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>PyTorch</h3>
+                    <p>Deep learning and neural network development</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-language"></i>
+                    <h3>NLTK</h3>
+                    <p>Natural language processing and text analysis</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>Agentic AI</h3>
+                    <p>Multi-agent systems and autonomous AI</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience-section">
+    <section id="experience" class="section">
         <div class="container">
             <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Research Assistant</h3>
-                        <p><strong>TRaCE Labs, New York University</strong> | Sep 2024 – Present | New York City, USA (Hybrid)</p>
-                        <ul>
-                            <li>Currently working on orchestration of multi agents and sequential dicision atrophy</li>
-                            <li>Co-authored a paper submitted to ICML 2025. (under review)</li>
-                        </ul>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <img src="custom_logos/RC-Trust.png" alt="RC Trust Logo" class="company-logo">
+                        <div class="experience-title">
+                            <h3>Research Intern</h3>
+                            <p><strong>Research Center Trustworthy Data Science and Security, Ruhr University</strong> | May 2025 – Aug 2025 | Bochum, Germany</p>
+                        </div>
                     </div>
+                    <ul>
+                        <li>Systematically analyzed methods for evaluating the diversity of information presented by generative AI content retrieval agents vs. traditional web search (Under review @ WSDM 2026).</li>
+                        <li>Curated real-world query datasets and collected search results via various search APIs, analyzing source coverage and temporal patterns.</li>
+                        <li>Designed a human evaluation study (Prolific + Pavlovia) to measure user preferences across Google AI Overviews, Gemini, and GPT-4 pipelines.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Technical Product Manager (Generative AI)</h3>
-                        <p><strong>Flixstock</strong> | Oct 2022 – Sep 2023 | Gurugram, India (On-site)</p>
-                        <ul>
-                            <li>Directed FlixLite’s image catalog revamp with StyleGAN2 & DensePose-RCNN, enhancing image quality and catalog size by 20%.</li>
-                            <li>Optimized ML pipelines with distributed computing, reducing errors by 30% and runtime by 60% to improve scalability.</li>
-                        </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <img src="custom_logos/Flixstock.png" alt="Flixstock Logo" class="company-logo">
+                        <div class="experience-title">
+                            <h3>Product Manager</h3>
+                            <p><strong>Flixstock</strong> | Oct 2022 – Sep 2023 | Gurugram, India</p>
+                        </div>
                     </div>
+                    <ul>
+                        <li>Directed FlixLite's image catalog revamp with StyleGAN2 & DensePose-RCNN, enhancing image quality and catalog size by 20%.</li> 
+                        <li>Optimized ML pipelines with distributed computing, reducing errors by 10% and runtime by 25% to improve scalability.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>AI/ML Analyst</h3>
-                        <p><strong>Standard Chartered Bank</strong> | Jul 2021 – Sep 2022 | Bengaluru, India (On-site)</p>
-                        <ul>
-                            <li>Developed ARIMA-based monitoring system, boosting credit card fraud detection efficiency by reducing false positives by 30%.</li>
-                            <li>Built a portal with RESTful APIs using Flask to decommission redundant tools, saving $60K annually in costs for 45 VMs.</li>
-                        </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <img src="custom_logos/Standard Chartered_idi6-Df9Fm_1.png" alt="Standard Chartered Logo" class="company-logo">
+                        <div class="experience-title">
+                            <h3>AI/ML Analyst</h3>
+                            <p><strong>Standard Chartered Bank</strong> | Jul 2021 – Sep 2022 | Bengaluru, India</p>
+                        </div>
                     </div>
+                    <ul>
+                        <li>Developed ARIMA-based monitoring system, boosting credit card fraud detection efficiency by reducing false positives by 8%.</li>
+                        <li>Built a portal with RESTful APIs using Flask to decommission redundant tools, saving $20K annually in costs for 25 VMs.</li>
+                    </ul>
                 </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <p><strong>Standard Chartered Bank</strong> | May 2020 – Jul 2020 | Bengaluru, India (Work from home) </p>
-                        <ul>
-                            <li>Trained an XGBoost model with 96% accuracy on transaction data, boosting fraud detection and reducing false positives by 25%.</li>
-                            <li>Developed Tableau dashboards for KPIs like transaction volume and response time, reducing reporting time by 4 hours/week.</li>
-                        </ul>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <img src="custom_logos/Standard Chartered_idi6-Df9Fm_1.png" alt="Standard Chartered Logo" class="company-logo">
+                        <div class="experience-title">
+                            <h3>Data Science Intern</h3>
+                            <p><strong>Standard Chartered Bank</strong> | May 2020 – Jul 2020 | Bengaluru, India</p>
+                        </div>
                     </div>
+                    <ul>
+                        <li>Trained an XGBoost model on transaction data, boosting fraud detection and reducing false positives by 5%.</li>
+                        <li>Developed Tableau dashboards for KPIs like transaction volume and response time, reducing reporting time by 4 hours/week.</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="section">
+        <div class="container">
+            <h2>Teaching</h2>
+            <div class="teaching-content">
+                <div class="teaching-item">
+                    <div class="teaching-header">
+                        <img src="custom_logos/NYU.png" alt="NYU Logo" class="university-logo">
+                        <div class="teaching-title">
+                            <h3>Teaching Assistant</h3>
+                            <p><strong>Courant Institute of Mathematical Sciences, NYU</strong> | Sep 2025 - Present | New York City, NY, USA</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Course: Algebra, Trigonometry, and Functions</li>
+                    </ul>
+                </div>
+                <div class="teaching-item">
+                    <div class="teaching-header">
+                        <img src="custom_logos/NYU.png" alt="NYU Logo" class="university-logo">
+                        <div class="teaching-title">
+                            <h3>Teaching Assistant</h3>
+                            <p><strong>Center for Data Science, NYU</strong> | Jan 2025 - May 2025 | New York City, NY, USA</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Course: Responsible Data Science</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education-section">
+    <section id="education" class="section">
         <div class="container">
             <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <h3>Master of Science in Data Science</h3>
-                        <p><strong>New York University</strong> | Sep 2024 – May 2026 | New York City, NY, USA</p>
-                        <ul>
-                            <li>1st semester: (3.778/4.0)</li>
-                            <li>Member of TRaCE labs and working on trustwrothy ML projects under prof Umang Bhatt</li>
-                            <li>Member Graduate Community Building group</li>
-
-                        </ul>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-header">
+                        <img src="custom_logos/NYU.png" alt="NYU Logo" class="university-logo">
+                        <div class="education-title">
+                            <h3>Master of Science in Data Science</h3>
+                            <p><strong>New York University</strong> | Sep 2024 – Present | New York City, NY, USA</p>
+                        </div>
                     </div>
+                    <ul>
+                        <li>Overall GPA: (3.9/4.0)</li>
+                        <li>1st paper under review @ NeurIPS 2025</li>
+                        <li>2nd paper under review @ WSDM 2026</li>
+                        <li>SVSAES Scholarship for Academic Excellence</li>
+                        <li>Member Graduate Community Building group</li>
+                    </ul>
                 </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <h3>Bachelor of Technology in Chemical Engineering </h3>
-                        <p><strong>Indian Institute of Technology BHU</strong> | Jul 2017 – May 2021 | Varanasi, UP, India</p>
-                        <ul>
-                            <li>Overall GPA: 8.68/10.0</li>
-                            <li>secretary, western music club</li>
-                            <li>Member club of programmers</li>
-                        </ul>
+                <div class="education-item">
+                    <div class="education-header">
+                        <img src="custom_logos/iit bhu.jpeg" alt="IIT BHU Logo" class="university-logo">
+                        <div class="education-title">
+                            <h3>Bachelor of Technology in Chemical Engineering</h3>
+                            <p><strong>Indian Institute of Technology BHU</strong> | Jul 2017 – May 2021 | Varanasi, India</p>
+                        </div>
                     </div>
+                    <ul>
+                        <li>Overall GPA: 8.68/10.0</li>
+                        <li>UG project on AI methods in Computational Fluid Dynamics</li>
+                        <li>Merit-cum-means scholarship for 1st year results</li>
+                        <li>Secretary, Western Music Club</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer and final -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <p>© 2025 Mihir Upadhyay</p>
         </div>
     </footer>
+
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+            const icon = themeToggle.querySelector('i');
+            
+            // Check for saved theme preference or default to dark theme
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            if (currentTheme === 'dark') {
+                body.classList.add('dark-theme');
+                icon.className = 'fas fa-sun';
+            }
+            
+            // Theme toggle functionality
+            themeToggle.addEventListener('click', function() {
+                body.classList.toggle('dark-theme');
+                
+                // Update icon
+                if (body.classList.contains('dark-theme')) {
+                    icon.className = 'fas fa-sun';
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    icon.className = 'fas fa-moon';
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
