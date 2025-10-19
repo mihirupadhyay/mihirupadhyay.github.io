@@ -62,9 +62,13 @@
             <div class="publications-content">
                 <div class="publication">
                     <h3>When Should We Orchestrate Multiple Agents?</h3>
-                    <p><strong>Under review @ NeurIPS 2025</strong></p>
                     <p><strong>Authors:</strong> Umang Bhatt, Sanyam Kapoor, <strong>Mihir Upadhyay</strong>, Katherine M. Collins, Ilia Sucholutsky, Francesco Quinzan, Adrian Weller, Andrew Gordon Wilson, Muhammad Bilal Zafar.</p>
-                    <a href="https://arxiv.org/abs/2503.13577" target="_blank">View Paper</a>
+                    <a href="https://arxiv.org/pdf/2503.13577" target="_blank">View</a>
+                </div>
+                <div class="publication">
+                    <h3>Characterizing Web Search in The Age of Generative AI</h3>
+                    <p><strong>Authors:</strong> Elisabeth Kirsten, Jost Grosse Perdekamp, <strong>Mihir Upadhyay</strong>, Krishna P. Gummadi, Muhammad Bilal Zafar.</p>
+                    <a href="https://arxiv.org/pdf/2510.11560" target="_blank">View</a>
                 </div>
             </div>
         </div>
@@ -235,8 +239,8 @@
                     </div>
                     <ul>
                         <li>Overall GPA: (3.9/4.0)</li>
-                        <li>1st paper under review @ NeurIPS 2025</li>
-                        <li>2nd paper under review @ WSDM 2026</li>
+                        <li>1st paper under review</li>
+                        <li>2nd paper under review</li>
                         <li>SVSAES Scholarship for Academic Excellence</li>
                         <li>Member Graduate Community Building group</li>
                     </ul>
@@ -272,18 +276,21 @@
         document.addEventListener('DOMContentLoaded', function() {
             const themeToggle = document.getElementById('theme-toggle');
             const body = document.body;
+            const html = document.documentElement;
             const icon = themeToggle.querySelector('i');
             
             // Check for saved theme preference or default to dark theme
             const currentTheme = localStorage.getItem('theme') || 'dark';
             if (currentTheme === 'dark') {
                 body.classList.add('dark-theme');
+                html.classList.add('dark-theme');
                 icon.className = 'fas fa-sun';
             }
             
             // Theme toggle functionality
             themeToggle.addEventListener('click', function() {
                 body.classList.toggle('dark-theme');
+                html.classList.toggle('dark-theme');
                 
                 // Update icon
                 if (body.classList.contains('dark-theme')) {
