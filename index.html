@@ -279,9 +279,29 @@
 
                     <div class="category-section">
                         <h4>Research Papers</h4>
-                        <ul class="recommendation-list">
-                            <li>Coming soon....</li>
+                        <ul class="recommendation-list" id="papers-list">
+                            <li class="paper-item">
+                                <a href="https://arxiv.org/pdf/2504.01538" target="_blank">AI-Newton: A Concept-Driven Physical Law Discovery System without Prior Physical Knowledge</a>
+                                <br><span class="paper-authors">You-Le Fang, Dong-Shan Jian, Xiang Li, Yan-Qing Ma</span>
+                            </li>
+                            <li class="paper-item">
+                                <a href="https://arxiv.org/abs/2505.19335" target="_blank">Knoll: Creating a Knowledge Ecosystem for Large Language Models</a>
+                                <br><span class="paper-authors">Dora Zhao, Diyi Yang, Michael S. Bernstein</span>
+                            </li>
+                            <li class="paper-item">
+                                <a href="https://arxiv.org/pdf/2510.25744" target="_blank">Completion ≠ Collaboration: Scaling Collaborative Effort with Agents</a>
+                                <br><span class="paper-authors">Shannon Zejiang Shen, Valerie Chen, Ken Gu, Alexis Ross, et al.</span>
+                            </li>
+                            <li class="paper-item hidden-paper">
+                                <a href="https://arxiv.org/pdf/2411.00027" target="_blank">Personalization of Large Language Models: A Survey</a>
+                                <br><span class="paper-authors">Zhehao Zhang, Ryan A. Rossi, Branislav Kveton, Diyi Yang, et al.</span>
+                            </li>
+                            <li class="paper-item hidden-paper">
+                                <a href="https://miba.dev/assets/publications/HCP_ArXiv_2025.pdf" target="_blank">Robust AI Personalization Will Require a Human Context Protocol</a>
+                                <br><span class="paper-authors">Anand V. Shah, Tobin South, Talfan Evans, Hannah Rose Kirk, et al.</span>
+                            </li>
                         </ul>
+                        <button id="view-more-papers" class="view-more-btn" style="display: none;">View More</button>
                     </div>  
                     
                     <div class="category-section">
@@ -361,6 +381,25 @@
                     localStorage.setItem('theme', 'light');
                 }
             });
+
+            // View More Papers functionality
+            const viewMoreBtn = document.getElementById('view-more-papers');
+            const papersList = document.getElementById('papers-list');
+            
+            // Check if there are any hidden papers
+            const hiddenPapers = papersList.querySelectorAll('.hidden-paper');
+            if (hiddenPapers.length > 0) {
+                viewMoreBtn.style.display = 'inline-block';
+            }
+            
+            if (viewMoreBtn) {
+                viewMoreBtn.addEventListener('click', function() {
+                    hiddenPapers.forEach(paper => {
+                        paper.classList.remove('hidden-paper');
+                    });
+                    viewMoreBtn.style.display = 'none';
+                });
+            }
         });
     </script>
 </body>
