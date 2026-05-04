@@ -1,7 +1,10 @@
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 \usepackage{geometry}
-\geometry{top=0.2in, bottom=0.3in, left=0.4in, right=0.4in}
-\usepackage{times}
+\geometry{top=0.6in, bottom=0.6in, left=0.7in, right=0.7in}
+%\usepackage{times}
+%\usepackage[T1]{fontenc}
+%\usepackage{newtxtext}
+\usepackage{XCharter}
 
 \usepackage{hyperref}
 \usepackage{xcolor}
@@ -22,7 +25,9 @@
 }
 
 \usepackage{enumitem}
+\usepackage{comment}
 \usepackage{titlesec}
+\usepackage{etaremune}
 \usepackage{fontawesome5}
 
 % -------------------------------------------------------
@@ -35,7 +40,12 @@
 % Main text + section titles
 \definecolor{sectioncolor}{RGB}{30,30,30}
 \definecolor{textcolor}{RGB}{35,35,35}  % was 80,80,80 → now darker & sharper
-\definecolor{boldcolor}{RGB}{20,20,20}  % was 50,50,50
+%\definecolor{textcolor}{RGB}{40,40,40}
+%\definecolor{boldcolor}{RGB}{10,10,10}
+%\definecolor{textcolor}{RGB}{0,0,0}
+%\definecolor{textcolor}{RGB}{25,25,25}
+\definecolor{boldcolor}{RGB}{0,0,0}
+%\definecolor{boldcolor}{RGB}{20,20,20}  % was 50,50,50
 \definecolor{lightboldcolor}{RGB}{40,40,40} % was 70,70,70
 
 % Lines, rules, links
@@ -79,104 +89,161 @@
     \quad $\vert$ \quad
     \faGithub \, \href{https://github.com/mihirupadhyay}{\color{boldcolor}GitHub} 
     \quad $\vert$ \quad
-    \faHome \, \href{https://mihirupadhyay.github.io/}{\color{boldcolor}mihirupadhyay.github.io}
+    \faHome \, \href{https://mihirupadhyay.github.io/}{\color{boldcolor}Website}
     }
     \vspace{0.2cm}
 \end{center}
-\vspace{-0.4cm}
-\vspace{-0.2cm}
-\section*{EDUCATION}
-{\color{boldcolor}\textbf{New York University}} \hfill New York, US  \\  
-\small \textit{M.S. in Data Science}  \hfill \textit{\small Sep 2024 - Present}\\ 
-{\color{boldcolor}\textit{GPA:}{ 3.93/4.0}} \\
 
-\vspace{-0.2cm}
+\section*{Academic History}
+
+{\color{boldcolor}\textbf{Purdue University}} \hfill West Lafayette, US  \\  
+\small \textit{Ph.D., Computer Science}  \hfill \textit{\small Aug 2026 -- May 2030}\\ 
+
+\vspace{0.08cm}
+
+{\color{boldcolor}\textbf{New York University}} \hfill New York, US  \\  
+\small \textit{Master of Science in Data Science}  \hfill \textit{\small Sep 2024 -- Present}\\ 
+
+\vspace{0.08cm}
 
 {\color{boldcolor}\textbf{Indian Institute of Technology BHU}} \hfill Varanasi, India\\
-\small \textit{B.Tech in Chemical Engineering, First Class with Honours} \hfill \textit{\small Jul 2017 - May 2021}\\
-{\color{boldcolor}\textit{GPA:}{ 8.68/10.0}} \\
+\small \textit{Bachelor of Technology, First Class with Honours} \hfill \textit{\small Jul 2017 -- May 2021}\\
 \vspace{-0.4cm}
+\section*{Academic Publications}
 
-\vspace{-0.08cm}
-\vspace{-0.2cm}
-\section*{RESEARCH \& INDUSTRY EXPERIENCE}
+\noindent
+\hangindent=2em
+\hangafter=1
+\makebox[2em][l]{[3]}%
+\textbf{Mihir Upadhyay*}, Bernardo Vilegas*, Siobhan Mackenzie Hall, Katherine M. Collins, Umang Bhatt. 
+Characterizing Higher-order Externalities of Human-AI Interaction on Human-Human Interaction. 
+\textit{Working paper}.\\
 
+\noindent
+\hangindent=2em
+\hangafter=1
+\makebox[2em][l]{[2]}%
+Elisabeth Kirsten, Jost Grosse Perdekamp, Qinyuan Wu, \textbf{Mihir Upadhyay}, Krishna P. Gummadi, Muhammad Bilal Zafar. 
+Characterizing Web Search in the Age of Generative AI. The Fourteenth International Conference on Learning Representations \textit{(ICLR'26), AIWILD}.\\
+
+\noindent
+\hangindent=2em
+\hangafter=1
+\makebox[2em][l]{[1]}%
+Umang Bhatt*, Sanyam Kapoor*, \textbf{Mihir Upadhyay}, Katherine M. Collins, Ilia Sucholutsky, Francesco Quinzan, Adrian Weller, Andrew Gordon Wilson, Muhammad Bilal Zafar. 
+When Should We Orchestrate Multiple Agents? \textit{(arXiv’25)}. 
+
+\section*{Research Experience}
+\begin{comment}
 {\color{boldcolor}\textbf{TRACE Lab, University of Cambridge}} 
 \hfill Cambridge, UK\\
-{\color{lightboldcolor}\textbf{\textit{Visiting Research Assistant}}} \hfill \textit{\small Sep 2025 – Present}
+{\color{lightboldcolor}\textbf{\textit{Visiting Research Assistant}}} \hfill \textit{\small Sep 2025 –- Present}
 \begin{itemize}
-    \item Led the development of an open-source framework to systematically characterize second- and third-order effects of human-AI interactions on downstream human-human decision-making.
-    \item Recorded \& analysed 10,000+ dyadic multi-player interactions via Prolific using custom Empirica-based experimental pipelines.
+    \item Developed taxonomy of AI-Human workflows across 5+ domains, mapping 4 oversight levels and governance structures.
+    \item Implemented multi-agent orchestration platform using LangChain \& CrewAI supporting 10+ workflow configurations.
+    \item Designed sandbox evaluation testbed using synthetic datasets and simulated human agents to study AI orchestration on real-world tasks from O*NET, analyzing cost and accuracy trade-offs.
+\end{itemize}
+\vspace{0.2cm}
+\end{comment}
+
+{\color{boldcolor}\textbf{TRACE Lab, New York University}} 
+\hfill  New York, US\\
+{\color{lightboldcolor}\textbf{\textit{Research Assistant}}} \hfill \textit{\small Sep 2025 –- Present}
+\begin{itemize}
+    \item Developed taxonomy of AI-Human workflows across 5+ domains, mapping 4 oversight levels and governance structures.
+    \item Implemented multi-agent orchestration platform using LangChain \& CrewAI supporting 10+ workflow configurations.
+    \item Designed sandbox evaluation testbed using synthetic datasets and simulated human agents to study AI orchestration on real-world tasks from O*NET, analyzing cost and accuracy trade-offs.
 \end{itemize}
 \vspace{0.2cm}
 
 {\color{boldcolor}\textbf{IBM Thomas J. Watson Research Center}} 
 \hfill New York, US\\
-{\color{lightboldcolor}\textbf{\textit{Student Researcher}}} \hfill \textit{\small Sep 2025 – Present}
+{\color{lightboldcolor}\textbf{\textit{Student Researcher}}} \hfill \textit{\small Sep 2025 -- Dec 2025}
 \begin{itemize}
-    \item Achieved a 35\% improvement in error detection for instruction following and tool calling using a checklist-based evaluation method over multi-hop trajectories in multi-agent systems.
-    \item Benchmarked 10+ open-source and proprietary LLMs on industrial asset operations, including time-series analysis tasks.
+    \item Curated a dataset of 140+ scenarios evaluating agents on compositional instructions and multi-agent orchestration tasks.
+    \item Created industrial workflows with agent dependency graphs, capturing temporal, logical, and data-dependent relationships.
+    \item Proposed the DRFR evaluation framework, revealing consistent task decomposition (ROUGE $\approx$ 0.25) but significant variance in parameter prediction across 10 open-source LLMs.
 \end{itemize}
 \vspace{0.2cm}
 
 {\color{boldcolor}\textbf{RC Trust, Ruhr University}} \hfill Bochum, Germany\\
-{\color{lightboldcolor}\textbf{\textit{Research Intern}}} \hfill \textit{\small May 2025 – Aug 2025}
+{\color{lightboldcolor}\textbf{\textit{Research Intern}}} \hfill \textit{\small May 2025 -- Aug 2025}
 \begin{itemize}
-    \item Identified limitations in evaluating generative search agents, including epistemic diversity, across six multi-domain datasets.
-    \item Implemented LLOOM-based concept induction to quantify topical coverage and latent reference structures, achieving a 25\% performance improvement over LDA in clustering-based representational analysis.
+    \item Developed evaluation framework for generative search agents across 6+ domains, capturing stability \& LLM stochasticity.
+    \item Observed 27\% decision flips and low source overlap (Jaccard $\approx$ 0.18--0.45) across repeated executions in generative search.
+    \item Applied LLOOM-based concept induction and AST-based parsing to quantify topical coverage and latent reference structures in generated outputs, achieving 25\% improvement over LDA.
+
 \end{itemize}
 \vspace{0.05cm}
 
+\vspace{0.05cm}
+\vspace{-0.05cm}
+
+\section*{Industry Experience}
+
 {\color{boldcolor}\textbf{Flixstock}} \hfill Gurugram, India\\
-{\color{lightboldcolor}\textbf{\textit{Technical Product Manager}}} \hfill \textit{\small Oct 2022 – Sep 2023}
+{\color{lightboldcolor}\textbf{\textit{Technical Product Manager}}} \hfill \textit{\small Oct 2022 -- Sep 2023}
 \begin{itemize}
-    \item Built end-to-end generative AI pipelines using diffusion models and semantic segmentation for AI-generated e-commerce product imagery, reducing production costs by 85\%.
-    \item Integrated ControlNet and LaMa for conditioning and inpainting, reducing structural and lighting errors by 30\%.
+    \item Led development of a multi-stage generative imaging pipeline (diffusion, BLIP, segmentation) for creating AI-generated human models with dynamic apparel rendering.
+    \item Added human-in-the-loop validation and QCs, increasing accuracy by 20\% and reducing manual intervention time by 30\%.
 \end{itemize}
 \vspace{0.05cm}
 
 {\color{boldcolor}\textbf{Standard Chartered Bank}} \hfill Bengaluru, India \\
-{\color{lightboldcolor}\textbf{\textit{AI/ML Analyst}}} \hfill \textit{\small Jul 2021 – Sep 2022}
+{\color{lightboldcolor}\textbf{\textit{AI/ML Analyst}}} \hfill \textit{\small Jul 2021 -- Sep 2022}
 \begin{itemize}
-    \item Led bank-wide adoption of trustworthy ML practices by deploying Truera-based bias and drift monitoring for forecasting models.
-    \item Built Docker-based CI/CD pipelines with Jenkins and Grafana dashboards, increasing automated failure detection by 25\%.
+    \item Led adoption of trustworthy ML practices by integrating Truera-based bias and drift monitoring for deployed ML models.
+    \item Integrated Dockerized workflows into CI/CD pipelines using Jenkins, improving automated failure detection by 25\%.
 \end{itemize}
 \vspace{0.05cm}
 
-{\color{lightboldcolor}\textbf{\textit{Data Science Intern}}} \hfill \textit{\small May 2020 – Jul 2020}
+{\color{lightboldcolor}\textbf{\textit{Data Science Intern}}} \hfill \textit{\small May 2020 -- Jul 2020}
 \begin{itemize}
-    \item Developed and optimized gradient-boosting and ensemble classifiers for credit card fraud detection, improving precision by 15\%.
+    \item Developed and optimized fraud detection classifiers in card transactions using bagging, boosting, and ensemble methods, improving precision by 15\%.
 \end{itemize}
 
-\vspace{-0.2cm}
-\section*{PUBLICATIONS}
+\section*{Projects}
+{\color{boldcolor}\textbf{Benchmarking Human-AI Collaboration in Multi-Agent Systems}}
+\href{https://github.com/mihirupadhyay/Benchmarking-Human-AI-Collaboration-in-Multi-Agent-Systems}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{\small May 2025 –- Aug 2025}
+\begin{itemize}
+    \item Developed game-based multi-agent testbed to study human-AI teams of 3 across competitive and cooperative settings.
+    \item Achieved +21.4\% gains in team payoff in cooperative sequential tasks and +18.7\% higher response diversity with memory in social deduction games (100+ runs).
+\end{itemize}
 
-{\color{boldcolor}\textbf{When Should We Orchestrate Multiple Agents?}} 
-\href{https://arxiv.org/pdf/2503.13577}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{Under submission (ICML)} \\
-\small \textit{Umang Bhatt*, Sanyam Kapoor*, \textbf{Mihir Upadhyay}, Andrew Gordon Wilson, Adrian Weller et al.} \\
+{\color{boldcolor}\textbf{\textbf{Derivative-Free Optimization of In-Context Learning for LLMs}}}
+\href{https://github.com/mihirupadhyay/Derivative-Free-Optimization-of-In-Context-Learning-for-LLMs}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{\small Jan 2026 –- May 2026}
+\begin{itemize}
+    \item Framed prompt optimization for LLMs as a derivative-free optimization problem and implemented a GEPA-based evolutionary framework under strict evaluation budgets ($\leq$500 queries).
+    \item Designed a unified evaluation pipeline across fact verification (HoVer) and program synthesis (HumanEval), incorporating sandboxed execution, multi-objective Pareto archiving, and cost-efficient surrogate screening.
+    \item Achieved performance gains of +20\% Pass@1 (GPT-3.5) and +26\% (Qwen-3-8B) on HumanEval, and +6.4\% on HoVer.
+\end{itemize}
 
-{\color{boldcolor}\textbf{Characterizing Web Search in the Age of Generative AI}} 
-\href{https://arxiv.org/pdf/2510.11560v1}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{Under submission (ACL ARR)} \\
-\small \textit{Elisabeth Kirsten, Jost Grosse Perdekamp, \textbf{Mihir Upadhyay}, Krishna P. Gummadi, and Muhammad Bilal Zafar} \\
+\begin{comment}
+{\color{boldcolor}\textbf{AutoBench: Evaluating LLM Tool-Use and Parameter Grounding in Industrial Workflows}} 
+\href{https://github.com/mihirupadhyay/Multi-Agent-Evaluation-Framework-for-Human-AI-Collaboration}{\fontsize{8}{12}\selectfont\textcolor{darksilver}{\faLink}} \hfill \textit{\small Sep 2025 – Dec 2025}
+\begin{itemize}
+    \item Evaluated 5 state-of-the-art LLMs on AutoBench, benchmarking task decomposition, tool selection, and parameter prediction across 141 manually crafted dependency-structured industrial asset scenarios.
+    \item Demonstrated near-identical performance on task decomposition and tool selection across models (ROUGE-1 $\approx$ 0.248--0.251, node F1 $\approx$ 0.21, NED up to 0.896), indicating consistent sub-task identification and tool graph construction.
+\end{itemize}
+\end{comment}
 
+
+\vspace{-0.1cm}
+\section*{Skills}
+
+\textbf{Programming Languages:} Python, C, C++, Java, JavaScript, Rust, SQL, Bash \\
+\textbf{Tools and Platforms:} PyTorch, TensorFlow, Hugging Face Transformers, LangChain, LangGraph, CrewAI, vLLM, LangEval, Docker, AWS, Kubernetes, Jenkins, Supabase, Git, Apache, Spark, Hadoop \\
 \vspace{-0.4cm}
-\vspace{-0.2cm}
-\section*{LEADERSHIP \& AWARDS}
 
-{\color{boldcolor}\textbf{Teaching Assistant}}, \textit{Center for Data Science, NYU} (Course: Responsible Data Science) \hfill \textit{\small Jan 2025 -- May 2025} \\
-\vspace{-0.3cm}
-
-{\color{boldcolor}\textbf{Co-organizer}}, \textit{NYU Computational Intelligence, Vision, and Robotics (CILVR) Seminar Series} \hfill \textit{\small Nov 2024 -- Present} \\
-\vspace{-0.3cm}
-
-{\color{boldcolor}\textbf{Swami Vivekanand Scholarship for Academic Excellence}}, MS funding \hfill \textit{\small Sep 2024 -- Present} \\
-\vspace{-0.3cm}
-
-{\color{boldcolor}\textbf{IIT BHU Merit Scholarship}}, Bachelor’s funding \hfill \textit{\small Aug 2017 -- May 2021}
-
-\section*{SKILLS}
-\textbf{Programming and Tools:} Python, NumPy, pandas, scikit-learn, PyTorch, TensorFlow, Hugging Face Transformers, LangChain, SQL, Shell Scripting, Docker, AWS, Jenkins, Grafana, HTML, JavaScript, CI/CD Pipelines, Large Language Models, MLOps \\
-\textbf{Coursework:} Deep Learning, Machine Learning, Probability and Statistics, Linear Algebra, Responsible AI, Information Theory \\
-\textbf{Languages:} Braj (Native), Hindi (Native), English (Fluent)
-
+\section*{Awards \& Leadership}
+Recipient of \textbf{Swami Vivekanand Scholarship for Academic Excellence} toward MS funding 2024--26\\
+\textbf{Co-organizer} NYU Computational Intelligence, Vision, and Robotics (CILVR) Seminar Series 2024--26 \\
+\textbf{Teaching Assistant} NYU Courant Institute of Mathematical Sciences (Algebra, Trigonometry, and Functions) Fall'25\\
+\textbf{Teaching Assistant} NYU Center for Data Science (Responsible Data Science) Spring'25\\
+\textbf{Member} NYU Graduate Community Building Group (GCBG) 2024--25\\
+Recipient of \textbf {IIT BHU Merit Scholarship} for the academic years 2017--21 \\
+\textbf{Gold Medal} IIT BHU Inter-Hostel Meet 2019 (Football)\\
+\textbf{Silver Medal} Inter-IIT Cultural Meet 2019 (Music track)\\
+\textbf{Member} IIT BHU Cultural Council 2019--20\\
+\textbf{Secretary} IIT BHU Western Music Club 2019--20\\
 \end{document}
